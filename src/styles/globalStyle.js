@@ -55,6 +55,7 @@ main{
 	width: 100%;
 	max-width: 1200px;
 	box-sizing: border-box;
+	justify-content: space-between;
 }
 
 option{
