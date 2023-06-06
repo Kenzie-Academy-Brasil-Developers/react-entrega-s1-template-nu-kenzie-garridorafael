@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const StyledList = styled.li`
   width: 100%;
@@ -37,4 +37,4 @@ export const StyledList = styled.li`
     font-size: 0.75rem;
     line-height: 22px;
   }
-`;
+`
