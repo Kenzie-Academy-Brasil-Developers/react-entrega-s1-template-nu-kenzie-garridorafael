@@ -1,28 +1,28 @@
-import { StyledForm } from "./styledForm";
-import { StyledDescription } from "./styledForm";
-import { StyledSmall } from "./styledForm";
-import { StyledInput } from "./styledForm";
-import { StyledSelect } from "./styledForm";
-import { StyledButton } from "./styledForm";
-import { v4 as uuidv4 } from 'uuid';
-import { useState } from "react";
+import { StyledForm } from "./styledForm"
+import { StyledDescription } from "./styledForm"
+import { StyledSmall } from "./styledForm"
+import { StyledInput } from "./styledForm"
+import { StyledSelect } from "./styledForm"
+import { StyledButton } from "./styledForm"
+import { v4 as uuidv4 } from "uuid"
+import { useState } from "react"
 
 export function Form({ setFormValues }) {
-  const [description, setDescription] = useState("");
-  const [value, setValue] = useState("");
-  const [typeValue, setTypeValue] = useState("");
+  const [description, setDescription] = useState("")
+  const [value, setValue] = useState("")
+  const [typeValue, setTypeValue] = useState("")
 
   const addValueToList = () => {
-    const newValue = { id: uuidv4(), description, value, typeValue };
-    setFormValues((prevValues) => [...prevValues, newValue]);
-  };
+    const newValue = { id: uuidv4(), description, value, typeValue }
+    setFormValues((prevValues) => [...prevValues, newValue])
+  }
 
   const handleSubmit = (evt) => {
-    evt.preventDefault();
-    addValueToList();
-    setDescription("");
-    setValue("");
-    setTypeValue("");
+    evt.preventDefault()
+    addValueToList()
+    setDescription("")
+    setValue("")
+    setTypeValue("")
   };
 
   return (

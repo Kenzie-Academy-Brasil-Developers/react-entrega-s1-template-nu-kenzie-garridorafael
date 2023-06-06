@@ -1,6 +1,6 @@
-import logo from "../../assets/Nu-Kenzie.png";
-import { NavBar } from "./styledHeader";
-import { StyledContainer } from "../../styles/globalStyle";
+import logo from "../../assets/Nu-Kenzie.png"
+import { NavBar } from "./styledHeader"
+import { StyledContainer } from "../../styles/globalStyle"
 
 export function Header() {
   return (
@@ -9,5 +9,5 @@ export function Header() {
         <img src={logo} alt="logo da nu kenzie" />
       </StyledContainer>
     </NavBar>
-  );
+  )
 }

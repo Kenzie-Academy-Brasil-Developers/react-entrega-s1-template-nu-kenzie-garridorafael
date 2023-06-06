@@ -1,12 +1,12 @@
-import { useState } from "react";
-import { GlobalStyle, StyledContainer } from "./styles/globalStyle";
-import { Header } from "./Components/Header/Header";
-import { Form } from "./Components/Form/Form";
-import { Summary } from "./Components/FinancialSummary/Summary";
-import { Value } from "./Components/TotalValue/TotalValue";
+import { useState } from "react"
+import { GlobalStyle, StyledContainer } from "./styles/globalStyle"
+import { Header } from "./Components/Header/Header"
+import { Form } from "./Components/Form/Form"
+import { Summary } from "./Components/FinancialSummary/Summary"
+import { Value } from "./Components/TotalValue/TotalValue"
 
 function App() {
-  const [valueList, setFormValues] = useState([]);
+  const [valueList, setFormValues] = useState([])
 
   return (
     <>
@@ -22,7 +22,7 @@ function App() {
       </main>
         </StyledContainer>
     </>
-  );
+  )
 }
 
-export default App;
+export default App

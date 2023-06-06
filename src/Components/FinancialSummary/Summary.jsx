@@ -1,16 +1,16 @@
-import { useState } from "react";
-import { ValueCard } from "./ListValuesCard/ListValues";
-import { StyledSection } from "./StyledSumary";
-import { StyledTitle } from "./StyledSumary";
-import { StyledNotice } from "./StyledSumary";
-import { StyledContainer } from "../../styles/globalStyle";
+import { useState } from "react"
+import { ValueCard } from "./ListValuesCard/ListValues"
+import { StyledSection } from "./StyledSumary"
+import { StyledTitle } from "./StyledSumary"
+import { StyledNotice } from "./StyledSumary"
+import { StyledContainer } from "../../styles/globalStyle"
 
 export function Summary({ valueList, setFormValues }) {
   const removeValueFromList = (valueId) => {
     setFormValues((valueList) =>
       valueList.filter((value) => value.id !== valueId)
-    );
-  };
+    )
+  }
 
   return (
     <StyledSection>
@@ -31,5 +31,5 @@ export function Summary({ valueList, setFormValues }) {
         )}
       </StyledContainer>
     </StyledSection>
-  );
+  )
 }

@@ -5,15 +5,15 @@ import { DivValue } from "./StyledValue"
 
 export function Value({ valueList }){
 
-    let totalValue = 0;
+    let totalValue = 0
 
   valueList.forEach((item) => {
     if(item.typeValue === "Entrada"){
-    totalValue += Number(item.value);
+    totalValue += Number(item.value)
     }else{
-        totalValue -= Number(item.value);
+        totalValue -= Number(item.value)
     }
-  });
+  })
 
 
     return(

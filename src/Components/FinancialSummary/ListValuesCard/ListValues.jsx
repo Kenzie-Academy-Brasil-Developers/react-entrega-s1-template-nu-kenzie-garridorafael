@@ -1,10 +1,10 @@
-import { StyledNotice } from "../StyledSumary";
-import { StyledList } from "./StyledListValuesCard";
+import { StyledNotice } from "../StyledSumary"
+import { StyledList } from "./StyledListValuesCard"
 
 
 export const ValueCard = ({ value, removeValueFromList }) => {
     return (
-      <StyledList>
+      <StyledList type={value.typeValue}>
         <h4>{value.description}</h4>
         <div>
           <span>{value.typeValue}</span>
